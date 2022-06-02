@@ -1,7 +1,7 @@
 import './App.css';
 import {useState, useEffect} from "react";
-import Form
- from './components/Form';
+import Form from './components/Form';
+import Header from './components/Header';
 const App = () => {
   const [links, setLinks] = useState(null);
 
@@ -31,12 +31,12 @@ const App = () => {
 const loaded = () => {
   return (
     <div className="App">
-      <h1 className="bookmark-title">Bookmark'd</h1>
-        <Form />
+      <Header />
+      <Form />
         <hr />
       {links.map((info) => {
         return (
-        <a className="links" key={info._id} href={info.url} rel="noreferrer" target="_blank">
+        <a className="links" key={info._id} href={info.url} target="_blank">
             <h1>{info.title}</h1>
         </a>
         )

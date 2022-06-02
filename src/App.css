@@ -8,9 +8,8 @@ body {
   font-family: 'Noto Sans', sans-serif;
   background-color: lightblue;
   width: 100%;
-  padding: 12px 20px;
+  padding: 30px 20px;
   margin: 0 auto;
-  padding-top: 0px;
 }
 
 .App {
@@ -19,8 +18,12 @@ body {
 }
 
 .links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   text-decoration: none;
   font-family: 'Noto Sans', sans-serif;
+  padding: 20px;
 }
 
 input {
