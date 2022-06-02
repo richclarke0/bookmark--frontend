@@ -11,6 +11,17 @@ const App = () => {
     setLinks(data)
   };
 
+  const createLink = async (link) => {
+    await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "Application/json"
+      },
+      body: JSON.stringify(link)
+    })
+    getLinks();
+  }
+
   useEffect(() => {getLinks()}, []);
   
 const loaded = () => {
