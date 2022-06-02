@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Form = () => {
+const Form = ({createLink}) => {
 
   const [form, setForm] = useState({
     title: "",
@@ -16,7 +16,11 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+    createLink(form);
+    setForm({
+      title: "",
+      url: "",
+    })
   }
 
 
