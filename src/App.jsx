@@ -9,10 +9,10 @@ const App = () => {
     const res = await fetch(url);
     const data = await res.json();
     setLinks(data)
-    console.log(data)
   };
 
   useEffect(() => {getLinks()}, []);
+  
 const loaded = () => {
   return (
     <div className="App">
