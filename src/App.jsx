@@ -24,19 +24,22 @@ const App = () => {
     getLinks();
   }
 
+
+
   useEffect(() => {getLinks()}, []);
   
 const loaded = () => {
   return (
     <div className="App">
+      <h1 className="bookmark-title">Bookmark'd</h1>
+        <Form />
       {links.map((info) => {
         return (
-        <a key={info._id} href={info.url} target="_blank">
+        <a className="links" key={info._id} href={info.url} rel="noreferrer" target="_blank">
             <h1>{info.title}</h1>
         </a>
         )
       })}
-      <Form />
     </div>
   );
     }

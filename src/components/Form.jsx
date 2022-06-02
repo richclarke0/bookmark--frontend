@@ -25,7 +25,7 @@ const Form = ({createLink}) => {
 
 
   return (
-    <div className="form">
+    <div className="form-group">
       <form onSubmit={handleSubmit}>
         <input 
           type="text"
@@ -43,7 +43,7 @@ const Form = ({createLink}) => {
           onChange={handleChange}
           required 
         />
-      <button>Submit</button>
+      <button className="btn btn-block">Submit</button>
       </form>
     </div>
   )
