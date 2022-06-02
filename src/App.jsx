@@ -1,5 +1,7 @@
 import './App.css';
 import {useState, useEffect} from "react";
+import Form
+ from './components/Form';
 const App = () => {
   const [links, setLinks] = useState(null);
 
@@ -34,6 +36,7 @@ const loaded = () => {
         </a>
         )
       })}
+      <Form />
     </div>
   );
     }

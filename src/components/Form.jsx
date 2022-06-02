@@ -25,9 +25,26 @@ const Form = ({createLink}) => {
 
 
   return (
-    <div>
-
-
+    <div className="form">
+      <form onSubmit={handleSubmit}>
+        <input 
+          type="text"
+          name="title"
+          value={form.title}
+          placeholder="title"
+          onChange={handleChange}
+          required 
+        />
+        <input 
+          type="text"
+          name="url"
+          value={form.url}
+          placeholder="url"
+          onChange={handleChange}
+          required 
+        />
+      <button>Submit</button>
+      </form>
     </div>
   )
 }
