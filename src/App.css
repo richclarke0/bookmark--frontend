@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Poppins:wght@100&display=swap');
 
+body {
+  background-image: url("https://www.pixelstalk.net/wp-content/uploads/images1/Wallpaper-book-1920x1080.jpg")
+}
+
 .bookmark-title {
   font-family: 'Noto Sans', sans-serif;
   background-color: lightblue;
   width: 100%;
   padding: 12px 20px;
   margin: 0 auto;
+  padding-top: 0px;
 }
 
 .App {
@@ -24,8 +29,8 @@ input {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 1px solid rgb(97, 103, 230);
+  border-radius: 9px;
   box-sizing: border-box;
 }
 
@@ -35,6 +40,6 @@ input {
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
-  border-radius: 4px;
+  border-radius: 9px;
   cursor: pointer;
 }

@@ -33,6 +33,7 @@ const loaded = () => {
     <div className="App">
       <h1 className="bookmark-title">Bookmark'd</h1>
         <Form />
+        <hr />
       {links.map((info) => {
         return (
         <a className="links" key={info._id} href={info.url} rel="noreferrer" target="_blank">
