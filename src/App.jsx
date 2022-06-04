@@ -66,6 +66,7 @@ const loaded = () => {
         links={links}
         createLink={createLink}
         deleteLink={deleteLink}
+        updateLink={updateLink}
       />
     </div>
   );
