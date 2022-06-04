@@ -76,9 +76,6 @@ const loaded = () => {
         links={links}
         createLink={createLink}
         deleteLink={deleteLink}
-        updateLink={updateLink}
-        formState={formState}
-        setFormState={setFormState}
         editLink={editLink}
       />
     </div>
