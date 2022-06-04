@@ -7,6 +7,18 @@ export default function List(props) {
         // }
         
         //map over the array
-        <Item formState={props.formState}/>
-    
+        <Item 
+        formState={props.formState} 
+        setFormState={props.setFormState} 
+        url={props.url} 
+        title={props.title}
+        delete={props.delete}
+        />
+    ///
+
+    ////
+
+    ///
+
+    ///
 }
