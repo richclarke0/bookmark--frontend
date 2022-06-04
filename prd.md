@@ -95,7 +95,7 @@ You should also include any additional notes on any special headers that may be 
 
 ## Component Architecture
 
-![Component Architecture](https://docs.google.com/drawings/d/1gwjxKWcQtQr5W70Zx4YCaRANZ9-MVS0x_8EGTGQf6lU/edit?usp=sharing)
+[Component Architecture](https://docs.google.com/drawings/d/1gwjxKWcQtQr5W70Zx4YCaRANZ9-MVS0x_8EGTGQf6lU/edit?usp=sharing)
 
 ## User Interface Mockups
 
