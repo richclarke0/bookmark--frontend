@@ -1,11 +1,15 @@
+
 export default function Item(props) {
-    //uses formstate
-    //takes individual items from the array (used in map)
-    // this is how item is called in list
-    //<Item formState={props.formState} url={props.url} title={props.title}/>
- //your props variables are 
-//  props.formState
-//  props.setFormState
-//  props.url 
-//  props.title
+    
+return (
+   <div className="item">
+       <a href={props.url}>{props.title}</a>
+       <div onClick={() =>{ props.editLink(props.id, props.url, props.title )}}>E</div>
+      <div onClick={() => { props.deleteLink(props.id)}}>X</div>
+   </div>
+
+)
 }
+
+
+
