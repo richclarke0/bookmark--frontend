@@ -5,8 +5,10 @@ export default function List(props) {
         //     title: "",
         //         url: ""
         // }
-        
         //map over the array
+        
+        
+        //props.links.map
         <Item 
         formState={props.formState} 
         setFormState={props.setFormState} 
@@ -14,11 +16,7 @@ export default function List(props) {
         title={props.title}
         delete={props.delete}
         />
-    ///
 
-    ////
 
-    ///
 
-    ///
 }
