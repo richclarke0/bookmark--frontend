@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Poppins:wght@100&display=swap');
+
+body {
+  background-image: url("https://www.pixelstalk.net/wp-content/uploads/images1/Wallpaper-book-1920x1080.jpg");
+  background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
+  margin: 0;
+}
+
+
+
+.bookmark-title {
+  font-family: 'Noto Sans', sans-serif;
+  background-color: lightblue;
+  width: 100%;
+  padding: 30px 20px;
+  margin: 0 auto;
+}
+
+.App {
+  display: block;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-decoration: none;
+  font-family: 'Noto Sans', sans-serif;
+  padding: 20px;
+}
+
+input {
+  padding: 12px 20px;
+  margin: 8px 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(97, 103, 230);
+  border-radius: 9px;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: #1327de;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.list {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 100%;
+  gap: .4em;
+}
+
+.item {
+  display: grid;
+  width: 60%;
+  /* border: 2px solid blue; */
+  background-color: rgba(173, 216, 230, 0.638);
+  border-radius: 1em;
+  padding: .5em;
+  padding-right: 1em;
+ grid-template-columns: 10fr 1fr 1fr;
+ grid-gap: .4em
+}
+
+.item a {
+  /* border: 1px solid grey; */
+  border-radius: 2px;
+  width: 100%;
+  font-family: 'Noto Sans', sans-serif;
+  position:relative;
+  top:.2em;
+  font-size: 2em;
+  color: Black;
+  text-decoration: none;
+  font-weight: 800;
+  margin-right: 2em;
+}
+
+form {
+  margin-left: 5em;
+}
