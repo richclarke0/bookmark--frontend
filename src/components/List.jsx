@@ -17,6 +17,7 @@ export default function List(props) {
         editLink={props.editLink}
         url={entry.url}
         title={entry.title}
+        id={entry._id}
       />
     ))}
   </div>
