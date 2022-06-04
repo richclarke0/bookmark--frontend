@@ -6,10 +6,10 @@
 | Project Name | Bookmark'd |
 | Description | User can add, edit, and delete personal bookmarks all on a single page |
 | Developers | {Calvin Harris: Testing, Documentation}, {Rich Clarke: Flowchart, App.jsx},{ Wendy Ochoa: Item.jsx}, {Javier Delgado: Form.jsx} |
-| Live Website | ![Netlify](https://629be03c7ea5354f2169c5cb--fascinating-zuccutto-f14945.netlify.app/)|
+| Live Website | [Netlify](https://629be03c7ea5354f2169c5cb--fascinating-zuccutto-f14945.netlify.app/)|
 | Repo | https://github.com/richclarke0/bookmark--frontend |
-| Backend Deployment | ![Heroku](https://bookmark--backend.herokuapp.com/bookmarks)
-| Backend Repo  |![Github](https://github.com/Vanillajaviscript/bookmark--backend)|
+| Backend Deployment | [Heroku](https://bookmark--backend.herokuapp.com/bookmarks)
+| Backend Repo  |[Github](https://github.com/Vanillajaviscript/bookmark--backend)|
 
 ## Problem Being Solved and Target Market
 
