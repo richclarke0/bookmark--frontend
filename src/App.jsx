@@ -6,7 +6,8 @@ import List from './components/List';
 
 const App = () => {
   const [links, setLinks] = useState(null);
-
+  const [formState, setFormState] = useState(null);
+  
   const url = "https://bookmark--backend.herokuapp.com/bookmarks/";
 
   const getLinks = async () => {
@@ -67,6 +68,8 @@ const loaded = () => {
         createLink={createLink}
         deleteLink={deleteLink}
         updateLink={updateLink}
+        formState={formState}
+        setFormState={setFormState}
       />
     </div>
   );
