@@ -1,6 +1,6 @@
+import { useState } from "react";
 
-
-const List = () => {
+const List = ({ links, createLink,  }) => {
   return (
     <div>
 

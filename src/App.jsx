@@ -2,6 +2,8 @@ import './App.css';
 import {useState, useEffect} from "react";
 import Form from './components/Form';
 import Header from './components/Header';
+import List from './components/List';
+
 const App = () => {
   const [links, setLinks] = useState(null);
 
@@ -22,8 +24,25 @@ const App = () => {
       body: JSON.stringify(link)
     })
     getLinks();
-  }
+  };
 
+  const updateLink = async (link,id) => {
+    await fetch(url + id, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "Application/json",
+      },
+      body: JSON.stringify(link)
+    })
+    getLinks();
+  };
+
+  const deleteLink = async (id) => {
+    await fetch(url + id, {
+      method: "DELETE"
+    })
+    getLinks();
+  }
 
 
   useEffect(() => {getLinks()}, []);
@@ -32,7 +51,9 @@ const loaded = () => {
   return (
     <div className="App">
       <Header />
-      <Form />
+      <Form 
+        createLink={createLink}
+      />
         <hr />
       {links.map((info) => {
         return (
@@ -41,6 +62,11 @@ const loaded = () => {
         </a>
         )
       })}
+      <List 
+        links={links}
+        createLink={createLink}
+        deleteLink={deleteLink}
+      />
     </div>
   );
     }
