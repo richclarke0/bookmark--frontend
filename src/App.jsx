@@ -6,7 +6,8 @@ import List from './components/List';
 
 const App = () => {
   const [links, setLinks] = useState(null);
-
+  const [formState, setFormState] = useState(null);
+  
   const url = "https://bookmark--backend.herokuapp.com/bookmarks/";
 
   const getLinks = async () => {
@@ -44,6 +45,15 @@ const App = () => {
     getLinks();
   }
 
+  //booya function
+  function editLink(id, url, title) {
+    setForm({
+      title: title,
+      url: url,
+    })
+    deleteLink(id)
+  }
+
 
   useEffect(() => {getLinks()}, []);
   
@@ -67,6 +77,9 @@ const loaded = () => {
         createLink={createLink}
         deleteLink={deleteLink}
         updateLink={updateLink}
+        formState={formState}
+        setFormState={setFormState}
+        editLink={editLink}
       />
     </div>
   );
