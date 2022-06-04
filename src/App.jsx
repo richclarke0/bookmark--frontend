@@ -47,7 +47,7 @@ const App = () => {
 
   //booya function
   function editLink(id, url, title) {
-    setForm({
+    setFormState({
       title: title,
       url: url,
     })
@@ -76,9 +76,6 @@ const loaded = () => {
         links={links}
         createLink={createLink}
         deleteLink={deleteLink}
-        updateLink={updateLink}
-        formState={formState}
-        setFormState={setFormState}
         editLink={editLink}
       />
     </div>
