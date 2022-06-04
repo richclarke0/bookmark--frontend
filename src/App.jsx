@@ -47,7 +47,7 @@ const App = () => {
 
   //booya function
   function editLink(id, url, title) {
-    setForm({
+    setFormState({
       title: title,
       url: url,
     })
