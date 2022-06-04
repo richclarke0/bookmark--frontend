@@ -45,6 +45,15 @@ const App = () => {
     getLinks();
   }
 
+  //booya function
+  function editLink(id, url, title) {
+    setForm({
+      title: title,
+      url: url,
+    })
+    deleteLink(id)
+  }
+
 
   useEffect(() => {getLinks()}, []);
   
@@ -70,6 +79,7 @@ const loaded = () => {
         updateLink={updateLink}
         formState={formState}
         setFormState={setFormState}
+        editLink={editLink}
       />
     </div>
   );

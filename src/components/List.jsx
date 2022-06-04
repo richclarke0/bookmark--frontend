@@ -13,7 +13,8 @@ export default function List(props) {
       <Item
         formState={props.formState}
         setFormState={props.setFormState}
-        delete={props.delete}
+        deleteLink={props.deleteLink}
+        editLink={props.editLink}
         url={entry.url}
         title={entry.title}
       />
