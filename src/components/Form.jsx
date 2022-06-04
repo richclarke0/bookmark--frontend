@@ -1,14 +1,14 @@
 import { useState } from "react";
 
-const Form = ({createLink}) => {
+const Form = ({createLink, formState, setFormState}) => {
 
-  const [form, setForm] = useState({
-    title: "",
-    url: "",
-  });
+  // const [form, setForm] = useState({
+  //   title: "",
+  //   url: "",
+  // });
 
   const handleChange = (e) => {
-    setForm((prevState) => ({
+    setFormState((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value
     }))
@@ -16,7 +16,7 @@ const Form = ({createLink}) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    createLink(form);
+    createLink(formState);
     setFormState({
       title: "",
       url: "",
@@ -30,7 +30,7 @@ const Form = ({createLink}) => {
         <input 
           type="text"
           name="title"
-          value={form.title}
+          value={formState.title}
           placeholder="title"
           onChange={handleChange}
           required 
@@ -38,7 +38,7 @@ const Form = ({createLink}) => {
         <input 
           type="text"
           name="url"
-          value={form.url}
+          value={formState.url}
           placeholder="url"
           onChange={handleChange}
           required 

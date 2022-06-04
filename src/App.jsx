@@ -6,7 +6,9 @@ import List from './components/List';
 
 const App = () => {
   const [links, setLinks] = useState(null);
-  const [formState, setFormState] = useState(null);
+  const [formState, setFormState] = useState({
+    
+  });
   
   const url = "https://bookmark--backend.herokuapp.com/bookmarks/";
 
@@ -63,15 +65,10 @@ const loaded = () => {
       <Header />
       <Form 
         createLink={createLink}
+        setFormState={setFormState}
+        formState={formState}
       />
         <hr />
-      {links.map((info) => {
-        return (
-        <a className="links" key={info._id} href={info.url} target="_blank">
-            <h1>{info.title}</h1>
-        </a>
-        )
-      })}
       <List 
         links={links}
         createLink={createLink}
